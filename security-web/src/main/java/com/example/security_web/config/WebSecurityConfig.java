@@ -21,9 +21,9 @@ public class WebSecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
             .authorizeHttpRequests((requests) -> requests
-                .requestMatchers("/", "/home").permitAll()
-                .requestMatchers("/hello").hasRole("ADMIN")
-                .requestMatchers("/hello").hasRole("USER")
+                .requestMatchers("/", "/home", "/login", "/css/**", "/js/**").permitAll()
+                .requestMatchers("/admin/**").hasRole("ADMIN")
+                .requestMatchers("/user/**").hasRole("USER")
                 .anyRequest().authenticated()
             )
             .formLogin((form) -> form
@@ -41,8 +41,10 @@ public class WebSecurityConfig {
                 })
                 .permitAll()
             )
-            .logout((logout) -> logout
-                .logoutSuccessUrl("/login?logout")
+            .logout(logout -> logout
+                    .logoutUrl("/logout")
+                    .logoutSuccessUrl("/login?logout")
+                    .invalidateHttpSession(true)
                 .permitAll());
 
         return http.build();

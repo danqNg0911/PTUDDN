@@ -6,6 +6,8 @@
 <body>
 <h2>User Page</h2>
 <p>Hello, User! You are logged in.</p>
-<p><a th:href="@{/logout}">Logout</a></p>
+<form th:action="@{/logout}" method="post">
+    <button type="submit">Logout</button>
+</form>
 </body>
 </html>
