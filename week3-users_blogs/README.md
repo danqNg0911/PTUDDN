@@ -3,7 +3,7 @@ Nguyễn Hữu Hải Đăng - 23020524
 Blogs:
 
 1. List:
-    ![b1]https://raw.githubusercontent.com/danqNg0911/PTUDDN/main/img/week3/list_blogs.png
+    ![b1](https://raw.githubusercontent.com/danqNg0911/PTUDDN/main/img/week3/list_blogs.png)
 
 2. Post:
     ![b2](https://raw.githubusercontent.com/danqNg0911/PTUDDN/main/img/week3/post_blog.png)
