@@ -1,0 +1,34 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>SSO với Auth0</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Chào mừng đến với ứng dụng SSO Auth0</h1>-->
+
+<!--<div th:if="${name}">-->
+<!--    <p>Xin chào, <b th:text="${name}"></b> (<span th:text="${email}"></span>)</p>-->
+<!--    <a href="/logout">Đăng xuất</a>-->
+<!--</div>-->
+
+<!--<div th:unless="${name}">-->
+<!--    <a href="/oauth2/authorization/auth0">Đăng nhập với Auth0</a>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Trang chủ</title>
+</head>
+<body>
+<h1>Chào mừng đến với ứng dụng SSO Auth0</h1>
+
+<p>Xin chào, <b th:text="${name}"></b> (<span th:text="${email}"></span>)</p>
+<p>Access Token: <code th:text="${accessToken}"></code></p>
+<p>Refresh Token: <code th:text="${refreshToken}"></code></p>
+<a href="/logout">Đăng xuất</a>
+</body>
+</html>
+
