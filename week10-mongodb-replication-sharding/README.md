@@ -24,7 +24,11 @@ Tuần 10 : MongoDB - Replication và Sharding
 
       **Test với dữ liệu**
 
-      
+      Tạo và sinh dữ liệu
+      ![h1](https://raw.githubusercontent.com/danqNg0911/PTUDDN/main/img/week10/shard-4.png)
+
+      Xem chia shard
+      ![h1](https://raw.githubusercontent.com/danqNg0911/PTUDDN/main/img/week10/shard-5.png)
    
 
 
